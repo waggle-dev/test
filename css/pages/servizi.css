@@ -1,0 +1,82 @@
+/* =============================================
+   SERVIZI — GRIGLIA CATEGORIE
+   ============================================= */
+.section-servizi-grid { background: var(--color-background); }
+
+.servizi-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+@media (min-width: 600px) {
+  .servizi-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .servizi-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.card-servizio {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-lg);
+  border-top: 3px solid transparent;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.card-servizio:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0,66,79,0.12);
+}
+
+/* Colori alternati per il bordo-top */
+.card-servizio:nth-child(3n+1) { border-top-color: var(--color-secondary); }
+.card-servizio:nth-child(3n+2) { border-top-color: var(--color-warm); }
+.card-servizio:nth-child(3n+3) { border-top-color: var(--color-accent); }
+
+.card-servizio-icon {
+  width: 44px; height: 44px;
+  margin-bottom: var(--spacing-sm);
+}
+.card-servizio h3 { margin-bottom: 0.5rem; font-size: 1.1rem; }
+.card-servizio p  { font-size: 0.9rem; color: rgba(0,66,79,0.60); }
+
+/* =============================================
+   SERVIZI — COME LAVORIAMO
+   ============================================= */
+.section-come-lavoriamo { background: var(--color-primary); }
+.section-come-lavoriamo h2 { color: white; text-align: center; margin-bottom: var(--spacing-xl); }
+
+.step-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  max-width: 860px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .step-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.step-card {
+  text-align: center;
+  padding: var(--spacing-md);
+}
+.step-num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-warm);
+  line-height: 1;
+  margin-bottom: var(--spacing-sm);
+}
+.step-card h3 { color: white; margin-bottom: var(--spacing-xs); }
+.step-card p  { font-size: 0.92rem; color: rgba(247,245,242,0.65); }
+
+/* =============================================
+   SERVIZI — CTA FINALE
+   ============================================= */
+.section-servizi-cta {
+  background: var(--color-background);
+  text-align: center;
+}
+.section-servizi-cta h2 { margin-bottom: var(--spacing-sm); }
+.section-servizi-cta p  { color: rgba(0,66,79,0.60); margin-bottom: var(--spacing-lg); }

@@ -1,0 +1,164 @@
+/* =============================================
+   CHI SIAMO — STORIA / TIMELINE
+   ============================================= */
+.section-storia { background: var(--color-background); }
+.section-storia h2 { margin-bottom: var(--spacing-xl); }
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  max-width: 680px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px; bottom: 0;
+  width: 2px;
+  background: rgba(0,66,79,0.10);
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--spacing-lg);
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.55rem; top: 6px;
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 2px solid var(--color-background);
+}
+.timeline-year {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.timeline-item h3 { margin-bottom: 6px; font-size: 1.1rem; }
+.timeline-item p  { font-size: 0.92rem; color: rgba(0,66,79,0.60); }
+
+/* =============================================
+   CHI SIAMO — VALORI ESTESI
+   ============================================= */
+.section-valori-estesi { background: white; }
+
+.valore-esteso {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg) 0;
+  border-bottom: 1px solid rgba(0,66,79,0.08);
+}
+.valore-esteso:last-child { border-bottom: none; }
+
+.valore-num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgba(150,185,67,0.25);
+  line-height: 1;
+}
+.valore-esteso h3 { margin-bottom: var(--spacing-xs); }
+.valore-esteso p  { color: rgba(0,66,79,0.65); }
+
+@media (min-width: 768px) {
+  .valore-esteso {
+    grid-template-columns: 80px 1fr;
+    align-items: start;
+    gap: var(--spacing-lg);
+  }
+}
+
+/* =============================================
+   CHI SIAMO — TEAM
+   ============================================= */
+.section-team { background: var(--color-background); }
+.section-team h2 { margin-bottom: var(--spacing-xl); }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+@media (min-width: 768px) {
+  .team-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.team-card {
+  text-align: center;
+  padding: var(--spacing-md);
+  background: white;
+  border-radius: var(--radius-md);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,66,79,0.10);
+}
+
+.team-avatar {
+  width: 68px; height: 68px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin: 0 auto var(--spacing-sm);
+}
+
+.team-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+.team-role {
+  font-size: 0.82rem;
+  color: rgba(0,66,79,0.50);
+}
+
+/* =============================================
+   CHI SIAMO — LOGOMARK SPIEGATO
+   ============================================= */
+.section-logomark {
+  background: var(--color-primary);
+  text-align: center;
+}
+.section-logomark h2 { color: white; margin-bottom: var(--spacing-md); }
+
+.logomark-visual {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-xl);
+}
+.logomark-visual img { width: 120px; height: auto; }
+
+.logomark-legend {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .logomark-legend { grid-template-columns: repeat(3, 1fr); }
+}
+
+.legend-item { text-align: center; }
+.legend-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  margin: 0 auto var(--spacing-xs);
+}
+.legend-item p {
+  font-size: 0.88rem;
+  color: rgba(247,245,242,0.65);
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="I servizi di Varietà Cooperativa Sociale — Salute mentale, inclusione, autonomia, territorio e comunità." />
+  <title>Servizi — Varietà Cooperativa Sociale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/typography.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/servizi.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Vai al contenuto principale</a>
+
+  <!-- NAVBAR -->
+  <header class="navbar" role="banner">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Varietà — Homepage">
+        <img src="assets/logo/logo-color.svg" alt="" class="nav-logo-mark" />
+        <span class="nav-logotype">Variet<span class="accent">à</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Navigazione principale">
+        <a href="chi-siamo.html">Chi Siamo</a>
+        <a href="servizi.html" aria-current="page">Servizi</a>
+        <a href="bilancio.html">Bilancio Sociale</a>
+        <a href="index.html#contatti" class="nav-cta">Contatti</a>
+      </nav>
+      <button class="hamburger" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-label="Menu" aria-modal="true">
+    <button class="mobile-drawer-close" aria-label="Chiudi menu">&times;</button>
+    <nav aria-label="Navigazione mobile">
+      <a href="chi-siamo.html">Chi Siamo</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="bilancio.html">Bilancio Sociale</a>
+      <a href="index.html#contatti">Contatti</a>
+    </nav>
+  </div>
+  <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="page-hero" aria-label="Intestazione pagina">
+      <div class="container">
+        <p class="page-hero-badge">Servizi</p>
+        <h1>Molti servizi.<br>Un'unica identità.</h1>
+        <p>Ogni servizio nasce da un'unica domanda: come possiamo essere presenti in modo autentico, continuativo, dignitoso?</p>
+      </div>
+    </section>
+
+    <!-- GRIGLIA SERVIZI -->
+    <section class="section section-servizi-grid" id="servizi" aria-labelledby="servizi-title">
+      <div class="container">
+        <div class="section-intro reveal">
+          <h2 id="servizi-title">Le nostre aree di lavoro</h2>
+          <p>Interveniamo in tre macro-aree, con servizi pensati sulle persone e sui contesti.</p>
+        </div>
+
+        <div class="servizi-grid">
+
+          <!-- Salute mentale -->
+          <article class="card-servizio reveal">
+            <div class="card-servizio-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22" cy="22" r="16" stroke="#00424F" stroke-width="2"/>
+                <path d="M22,14 C22,14 16,18 16,24 C16,28 19,30 22,30 C25,30 28,28 28,24 C28,18 22,14 22,14Z" stroke="#00424F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Riabilitazione psichiatrica</h3>
+            <p>Percorsi riabilitativi individuali e di gruppo per persone con disagio psichico. Strutture residenziali e semiresidenziali.</p>
+          </article>
+
+          <article class="card-servizio reveal">
+            <div class="card-servizio-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="12" width="28" height="20" rx="4" stroke="#00424F" stroke-width="2"/>
+                <path d="M16,26 L28,26" stroke="#00424F" stroke-width="2" stroke-linecap="round"/>
+                <path d="M22,20 L22,32" stroke="#00424F" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Centri diurni</h3>
+            <p>Spazi di aggregazione e supporto per persone con fragilità. Laboratori, attività, socialità. Luoghi dove stare, non solo dove andare.</p>
+          </article>
+
+          <article class="card-servizio reveal">
+            <div class="card-servizio-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22,8 C22,8 10,16 10,26 C10,32 15,36 22,36 C29,36 34,32 34,26 C34,16 22,8 22,8Z" stroke="#00424F" stroke-width="2" stroke-linecap="round"/>
+                <path d="M18,28 L22,24 L26,28" stroke="#00424F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Supporto psicologico</h3>
+            <p>Colloqui individuali e percorsi di supporto psicologico per persone in momenti di crisi o transizione.</p>
+          </article>
+
+          <!-- Inclusione e autonomia -->
+          <article class="card-servizio reveal">
+            <div class="card-servizio-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="16" width="28" height="18" rx="3" stroke="#00424F" stroke-width="2"/>
+                <path d="M14,16 L14,12 C14,10 16,8 22,8 C28,8 30,10 30,12 L30,16" stroke="#00424F" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="22" cy="25" r="3" stroke="#00424F" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Abitare supportato</h3>
+            <p>Appartamenti condivisi con supporto educativo. Imparare a stare in uno spazio, gestire il quotidiano, costruire autonomia.</p>
+          </article>
+
+          <article class="card-servizio reveal">
+            <div class="card-servizio-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10,32 L10,22 C10,18 14,14 22,14 C30,14 34,18 34,22 L34,32" stroke="#00424F" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="22" cy="10" r="4" stroke="#00424F" stroke-width="2"/>
+                <path d="M16,32 L28,32" stroke="#00424F" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Inserimento lavorativo</h3>
+            <p>Tirocini, borse lavoro, accompagnamento all'impiego. Il lavoro come dignità, non come obbligo.</p>
+          </article>
+
+          <article class="card-servizio reveal">
+            <div class="card-servizio-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22,8 L36,36 L8,36 Z" stroke="#00424F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="22" y1="20" x2="22" y2="28" stroke="#00424F" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="22" cy="32" r="1.5" fill="#00424F"/>
+              </svg>
+            </div>
+            <h3>Percorsi di autonomia</h3>
+            <p>Accompagnamento individuale verso l'indipendenza. Budget di salute, progetto di vita, obiettivi condivisi.</p>
+          </article>
+
+          <!-- Territorio e comunità -->
+          <article class="card-servizio reveal">
+            <div class="card-servizio-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="20" r="6" stroke="#00424F" stroke-width="2"/>
+                <circle cx="30" cy="20" r="6" stroke="#00424F" stroke-width="2"/>
+                <path d="M22,14 C24,16 24,24 22,26" stroke="#00424F" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Mediazione e conflitti</h3>
+            <p>Mediazione familiare, sociale, di comunità. Stare con il conflitto senza cercare di eliminarlo.</p>
+          </article>
+
+          <article class="card-servizio reveal">
+            <div class="card-servizio-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22" cy="22" r="14" stroke="#00424F" stroke-width="2"/>
+                <circle cx="22" cy="22" r="6"  stroke="#00424F" stroke-width="2"/>
+                <line x1="22" y1="8"  x2="22" y2="14" stroke="#00424F" stroke-width="2"/>
+                <line x1="22" y1="30" x2="22" y2="36" stroke="#00424F" stroke-width="2"/>
+                <line x1="8"  y1="22" x2="14" y2="22" stroke="#00424F" stroke-width="2"/>
+                <line x1="30" y1="22" x2="36" y2="22" stroke="#00424F" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Animazione territoriale</h3>
+            <p>Progetti di comunità, eventi, spazi di partecipazione. Il territorio come risorsa, non solo come sfondo.</p>
+          </article>
+
+          <article class="card-servizio reveal">
+            <div class="card-servizio-icon" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10,30 L22,14 L34,30" stroke="#00424F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10,30 L34,30" stroke="#00424F" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="22" cy="22" r="3" stroke="#00424F" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Partenariati istituzionali</h3>
+            <p>Collaborazioni con ASL, Comuni, scuole, terzo settore. La rete come moltiplicatore di cura.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COME LAVORIAMO -->
+    <section class="section section-come-lavoriamo" aria-labelledby="come-lavoriamo-title">
+      <div class="container">
+        <h2 id="come-lavoriamo-title" class="reveal">Come lavoriamo</h2>
+
+        <div class="step-grid">
+          <div class="step-card reveal">
+            <div class="step-num" aria-hidden="true">01</div>
+            <h3>Ascolto</h3>
+            <p>Prima di tutto, ascoltiamo. Senza fretta, senza schemi prestabiliti. Ogni persona porta una storia che merita di essere compresa.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num" aria-hidden="true">02</div>
+            <h3>Progetto condiviso</h3>
+            <p>Costruiamo insieme un percorso. Gli obiettivi non vengono calati dall'alto: nascono dall'incontro tra quello che vogliamo noi e quello che vuole la persona.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num" aria-hidden="true">03</div>
+            <h3>Accompagnamento</h3>
+            <p>Siamo presenti nel tempo. Anche quando le cose non vanno. Anche quando il percorso cambia. La continuità è parte della cura.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINALE -->
+    <section class="section section-servizi-cta" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title" class="reveal">Vuoi saperne di più?</h2>
+        <p class="reveal">Raccontaci la tua situazione. Troviamo insieme il percorso più adatto.</p>
+        <a href="index.html#contatti" class="btn-dark reveal">Parliamo</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="assets/logo/logo-white.svg" alt="" class="footer-logo-mark" />
+        <span class="footer-logotype">Variet<span class="accent">à</span></span>
+      </div>
+      <p class="footer-tagline">Dove la cura diventa relazione</p>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <nav class="footer-links" aria-label="Link rapidi">
+        <a href="chi-siamo.html">Chi Siamo</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="bilancio.html">Bilancio Sociale</a>
+        <a href="index.html#contatti">Contatti</a>
+      </nav>
+      <p class="footer-copy">© 2024 Varietà Società Cooperativa Sociale. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

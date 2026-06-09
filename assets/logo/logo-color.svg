@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 104" fill="none" aria-hidden="true">
+  <!-- Logomark Varietà — tre percorsi da un'origine comune -->
+  <!-- Arco sinistro: Verde Germoglio — radici e cammino -->
+  <path d="M40,100 C26,82 4,62 22,42 C34,26 6,14 2,4"
+        stroke="#96B943" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arco centrale: Giallo Sole — relazione e cura -->
+  <path d="M40,100 C38,78 32,60 30,42 C28,26 20,14 18,4"
+        stroke="#F3BF41" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arco destro: Rosso Terra — futuro aperto -->
+  <path d="M40,100 C54,82 76,62 58,42 C46,26 74,14 78,4"
+        stroke="#C4442E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,47 @@
+/* Layout — container, griglie, spaziatura sezioni */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.section {
+  padding-block: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .container { padding-inline: 2rem; }
+  .section   { padding-block: var(--spacing-2xl); }
+}
+
+/* Griglie responsive generiche */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .grid-2 { grid-template-columns: repeat(2, 1fr); gap: var(--spacing-lg); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); gap: var(--spacing-lg); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); gap: var(--spacing-lg); }
+}
+
+@media (min-width: 1024px) {
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+}

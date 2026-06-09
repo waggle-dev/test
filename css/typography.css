@@ -1,0 +1,79 @@
+/* Tipografia — Josefin Sans per display/titoli, Poppins per body */
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.75;
+}
+
+/* Titoli */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--color-text);
+}
+
+h1 { font-size: 2rem;   font-weight: 500; }
+h2 { font-size: 1.5rem; font-weight: 500; }
+h3 { font-size: 1.2rem; font-weight: 500; }
+h4 { font-size: 1rem;   font-weight: 600; }
+
+p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+/* Highlight parole chiave */
+.highlight { color: var(--color-warm); }
+
+/* Etichette uppercase */
+.label {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Link con freccia */
+.link-arrow {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--color-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: gap var(--transition);
+}
+.link-arrow:hover { gap: 0.6rem; }
+
+/* Tablet 768px */
+@media (min-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.9rem; }
+  h3 { font-size: 1.4rem; }
+  p  { font-size: 1.05rem; }
+}
+
+/* Desktop 1024px */
+@media (min-width: 1024px) {
+  h1 { font-size: 3rem;   }
+  h2 { font-size: 2.2rem; }
+  h3 { font-size: 1.6rem; }
+  p  { font-size: 1.125rem; }
+}
+
+/* Rispetta prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
